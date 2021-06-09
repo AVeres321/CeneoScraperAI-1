@@ -2,7 +2,7 @@ from app import app
 from app.models.opinion import Opinion
 from app.models.product import Product
 from app.forms import ProductForm
-from Flask import request, render_template, redirect, url_for
+from flask import request, render_template, redirect, url_for
 import requests
 import json
 
