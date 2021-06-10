@@ -1,0 +1,16 @@
+{% extends "layout.html.jinja" %}
+
+{% block middle %}
+    {# <h2> {{product}} </h2> #}
+    {# <p> {{product}} </p> #}
+    {% for table in tables %}
+        {{ table|safe }}
+    {% endfor %}
+{% endblock middle %}
+{% block scripts %}
+    <script>
+        $(document).ready( function () {
+            $('#opinions').DataTable();
+        } );
+    </script>
+{% endblock scripts %}
