@@ -6,10 +6,10 @@
 <main role="main" class="container">
   <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
         <div class="col-md-6 px-0">
-          <h1 class="display-4 font-italic">Programming project description</h1>
-          <p class="lead my-3">The subject of the project implemented during classes is a web application for extracting
-product reviews from the Ceneo.pl website based on their individual codes and for
-displaying the downloaded opinions and basic statistics about them.</p>
+          <h2 class="display-4 font-italic">Programming project description</h2>
+          <p class="lead my-5">The purpose of the application is to extract opinions about products from the Ceneo.pl
+website. For product, the code of which will be given as a parameter, its name and all
+available opinions about it should be extracted.</p>
         </div>
       </div>
 
@@ -18,11 +18,20 @@ displaying the downloaded opinions and basic statistics about them.</p>
           
           <div class="blog-post">
             <h2 class="blog-post-title">How application should work</h2>
-            <p class="blog-post-meta">The purpose of the application is to extract opinions about products from the Ceneo.pl
-website. For product, the code of which will be given as a parameter, its name and all
-available opinions about it should be extracted. For each review please extract:</p>
+            <p class="blog-post-meta">The subject of the project implemented during classes is a web application for extracting
+product reviews from the Ceneo.pl website based on their individual codes and for
+displaying the downloaded opinions and basic statistics about them.
+The application will be implemented in stages, starting from a single file up to an advanced
+structure of files and directories based on the selected framework and best practices in
+software development. The application will initially be typically structured, but over time
+the code will be refactored into procedural form, and eventually an object-oriented
+approach will be applied. In the first stages of work, all parameters will be written in the
+code in the form of literals, and then a simple text interface will be used that allows user
+to enter values, which will later be the basis for the development of the web interface of
+the application.</p>
             <hr>
             <p>
+            <h3>For each review extracted elements are:</h3>
             <ul>
               <li>opinion ID</li>
               <li>opinion’s author</li>
@@ -39,97 +48,75 @@ available opinions about it should be extracted. For each review please extract:
             </p>
             
             <p>If any value is missing, the field should be left blank.</p>
-            <h2>In addition, the application should allow to display:</h2>
-            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-            <h3>Sub-heading</h3>
+            <h3>In addition, the application should allow to display:</h3>
             <p>
             <ul>
               <li>extracted opinions with all its components</li>
               <li>statistics about extracted reviews</li>
               <li>charts showing these statistics</li>
-            </ul>
-            </p>
-            <pre><code>Example code block</code></pre>
-            <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-            <h3>Sub-heading</h3>
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <ul>
-              <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-              <li>Donec id elit non mi porta gravida at eget metus.</li>
-              <li>Nulla vitae elit libero, a pharetra augue.</li>
-            </ul>
-            <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-            <ol>
-              <li>Vestibulum id ligula porta felis euismod semper.</li>
-              <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-              <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-            </ol>
-            <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+            </ul></p>
           </div><!-- /.blog-post -->
 
           <div class="blog-post">
-            <h2 class="blog-post-title">Another blog post</h2>
-            <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
+            <h2 class="blog-post-title">Stages of work on the project:</h2>
 
-            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-            <blockquote>
-              <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            </blockquote>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-          </div><!-- /.blog-post -->
-
-          <div class="blog-post">
-            <h2 class="blog-post-title">New feature</h2>
-            <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
-
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <h4>Structural application</h4>
+            <p>
             <ul>
-              <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-              <li>Donec id elit non mi porta gravida at eget metus.</li>
-              <li>Nulla vitae elit libero, a pharetra augue.</li>
-            </ul>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+              <li>Stage 1. Extraction of single opinion about product, the code of which will be entered
+in the program code.</li>
+              <li>Stage 2. Extraction of all opinions about product from a single page.</li>
+              <li>Stage 3. Extraction of all opinions about product from a all pages</li>
+            </ul></p>
+            <h4>Procedural application</h4>
+            <p>
+            <ul>
+              <li>Stage 4. Refactoring and code parameterization. Text user interface.</li>
+              <li>Stage 5. Save downloaded data to .json and/or .csv files.</li>
+              <li>Stage 6. Statistical analysis of the extracted opinions.</li>
+              <li>Stage 7. Preparation of charts based on statistics.</li>
+            </ul></p>
+            <h4>Object-oriented application</h4>
+            <p>
+            <ul>
+              <li>Stage 8. Using Flask micro framework.</li>
+              <li>Stage 9. Object data model (Product, Opinion).</li>
+              <li>Stage 10. Routes and views.</li>
+            </ul></p>
+            
           </div><!-- /.blog-post -->
 
-          <nav class="blog-pagination">
-            <a class="btn btn-outline-primary" href="#">Older</a>
-            <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
-          </nav>
 
         </div><!-- /.blog-main -->
 
         <aside class="col-md-4 blog-sidebar">
-          <div class="p-3 mb-3 bg-light rounded">
+          <div class="p-3 mb-2 bg-secondary text-white">
             <h4 class="font-italic">About</h4>
-            <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            <p class="mb-0">The idea of the project was created by mgr Katarzyna Wójcik and implemented in programing language Python together with the group Applied Informatics in Visul Studio Code.</p>
           </div>
 
-          <div class="p-3">
-            <h4 class="font-italic">Archives</h4>
+          <div class="p-3 mb-2 bg-light text-dark">
+            <h4 class="font-italic">Documentation and online resources</h4>
             <ol class="list-unstyled mb-0">
-              <li><a href="#">March 2014</a></li>
-              <li><a href="#">February 2014</a></li>
-              <li><a href="#">January 2014</a></li>
-              <li><a href="#">December 2013</a></li>
-              <li><a href="#">November 2013</a></li>
-              <li><a href="#">October 2013</a></li>
-              <li><a href="#">September 2013</a></li>
-              <li><a href="#">August 2013</a></li>
-              <li><a href="#">July 2013</a></li>
-              <li><a href="#">June 2013</a></li>
-              <li><a href="#">May 2013</a></li>
-              <li><a href="#">April 2013</a></li>
+              <li><a href="https://docs.python.org/3/">Python documentation</a></li>
+              <li><a href="http://git-scm.com/doc">Git documentation</a></li>
+              <li><a href="http://getbootstrap.com/">Bootstrap documentation</a></li>
+              <li><a href="https://daringfireball.net/projects/markdown/">Markdown documentation</a></li>
+              <li><a href="http://stackoverflow.com/">Stack overflow</a></li>
+              <li><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">BeautifulSoup library</a></li>
+              <li><a href="https://requests.readthedocs.io/en/master/">Requests library</a></li>
+              <li><a href="https://pandas.pydata.org/">Pandas library</a></li>
+              <li><a href="https://matplotlib.org/">Matplotlib library</a></li>
+              <li><a href="https://plot.ly/">Plotly library</a></li>
+              <li><a href="https://jinja.palletsprojects.com/en/2.11.x/">Jinja templating language</a></li>
+              <li><a href="https://flask.palletsprojects.com/en/1.1.x/">Flask micro framework</a></li>
             </ol>
           </div>
 
           <div class="p-3">
-            <h4 class="font-italic">Elsewhere</h4>
+            <h4 class="font-italic">Remote repository by A.Veres</h4>
             <ol class="list-unstyled">
-              <li><a href="#">GitHub</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Facebook</a></li>
+              <li><a href="https://github.com/AVeres321/CeneoScraperAI-1">CeneoScraperAI</a></li>
             </ol>
           </div>
         </aside><!-- /.blog-sidebar -->
